@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OkayBot</title>
+</head>
+<body>
+    <div id="chat-box" style="height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;"></div>
+    <input type="text" id="user-input" placeholder="Type something...">
+    <button onclick="handleChat()">Send</button>
+
+    <script src="script.js"></script>
+    <script>
+        // Optional: Allow pressing "Enter" to send
+        document.getElementById("user-input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                handleChat();
+            }
+        });
+    </script>
+</body>
+</html>
